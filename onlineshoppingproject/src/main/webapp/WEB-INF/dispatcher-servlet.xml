@@ -10,6 +10,7 @@
    ">
    
    <context:component-scan base-package="com.niit.onlineshoppingproject.controller"/>
+   <context:component-scan base-package="com.niit.backendproject.daoimpl"/>
    
    <bean id="viewResolver"
    		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

@@ -2,7 +2,9 @@ package com.niit.backendproject.daoimpl;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.stereotype.Repository;
+
 import com.niit.backendproject.dao.CategoryDAO;
 import com.niit.backendproject.dto.Category;
 
@@ -44,6 +46,18 @@ public class CategoryDAOimpl implements CategoryDAO {
 	public List<Category> list() {
 		// TODO Auto-generated method stub
 		return categories;
+	}
+	@Override
+	public Category get(int id) {
+		
+		//enhanced for loop
+		for(Category category : categories) {
+			
+			if(category.getId()== id)return category;
+			
+		}
+		
+		return null;
 	}
 
 }

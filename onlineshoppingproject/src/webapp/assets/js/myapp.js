@@ -12,7 +12,8 @@ $(function() {
 		$('#listProducts').addClass('active');
 		break;
 	default:
-		$('#home').addClass('active');
+	
+     	$('#home').addClass('active');
 	    $('#a_'+menu).addClass('active');
 	
 	break;
